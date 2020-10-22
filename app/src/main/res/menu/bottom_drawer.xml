@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/home"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_nav_profiles"
+            android:title="@string/profile"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/ic_nav_set"
+            android:title="@string/settings"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_nav_about"
+            android:title="@string/title_about"
+            app:showAsAction="never"/>
+
+    </group>
+
+</menu>

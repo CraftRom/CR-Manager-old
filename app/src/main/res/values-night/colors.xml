@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#63b4f6</color>
+    <color name="colorStroke">#434343</color>
+    <color name="colorBattery">#63b4f6</color>
+    <color name="colorChidori">#81c784</color>
+    <color name="colorPerformance">#ffb84d</color>
+    <color name="colorGame">#e57373</color>
+    <color name="colorHead">#B8B8B8</color>
+    <color name="colorAboutIcon">#FFFFFF</color>
+</resources>

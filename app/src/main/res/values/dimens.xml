@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardStrokeWidth">1.5dp</dimen>
+    <dimen name="settingSep">52dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">?android:attr/colorBackground</item>
+        <item name="colorPrimaryDark">?android:attr/colorBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">?android:attr/colorBackground</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?android:attr/isLightTheme</item>
+        <item name="android:windowLightNavigationBar">?android:attr/isLightTheme</item>
+    </style>
+
+    <style name="Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+</resources>
