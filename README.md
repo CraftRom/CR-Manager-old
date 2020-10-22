@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/CraftRom--Kernel%20Manager-vR.1.20201022-blue)](https://)
+[![](https://img.shields.io/badge/CraftRom--Kernel%20Manager-vR.1.20201022-blue)](https://github.com/CraftRom/CraftRom-Kernel-Manager/releases)
 ![](https://img.shields.io/github/contributors/craftrom/CraftRom-Kernel-Manager)
 ![](https://img.shields.io/github/license/craftrom/CraftRom-Kernel-Manager)
 
