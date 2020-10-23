@@ -20,7 +20,7 @@ android {
         minSdkVersion 28
         targetSdkVersion 29
         versionCode 1
-        versionName "R.1.20201022"
+        versionName "R.1.2.20201023"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -65,6 +65,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     def libsuVersion = '3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -78,6 +79,6 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-
+    implementation "androidx.preference:preference-ktx:1.1.1"
 
 }

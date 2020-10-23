@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.MenuItem
+import android.view.View
+import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentManager
@@ -17,6 +19,7 @@ import com.craftrom.kernelmanager.fragments.SettingsFragment
 import com.craftrom.kernelmanager.fragments.AboutFragment
 import com.craftrom.kernelmanager.utils.FileUtils
 import kotlinx.android.synthetic.main.activity_main.*
+import androidx.appcompat.widget.Toolbar
 
 object Choice {
     var choice = 0
@@ -24,7 +27,6 @@ object Choice {
 }
 
 class MainActivity : AppCompatActivity() {
-
     lateinit var fab: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {

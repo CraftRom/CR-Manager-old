@@ -8,4 +8,7 @@
     <color name="colorGame">#F44336</color>
     <color name="colorHead">#757575</color>
     <color name="colorAboutIcon">#434343</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
 </resources>

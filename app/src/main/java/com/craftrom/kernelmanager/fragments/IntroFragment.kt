@@ -62,13 +62,13 @@ class IntroFragment : Fragment() {
         context!!.registerReceiver(onDownloadComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
 
         device.text = PropUtils.readProp("ro.product.device")
-        chidoriVersion.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "{}")?.getString("version") ?: "Unknown"
+        chidoriVersion.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "{}")?.getString("version") ?: "unknown"
         buildType.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/cidori_kernel") ?: "{}")?.getString("type") ?: "unknown"
         kernVer.text = PropUtils.kernelVersion()
-        buildDate.text = SimpleDateFormat("EEE, dd MMM yyyy hh:mm aa", Locale.getDefault()).format(SimpleDateFormat("yyyyMMdd-HHmm", Locale.getDefault()).parse(JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "")?.getString("buildtime") ?: "Unknown") ?: "") ?: "Unknown"
+        buildDate.text = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(SimpleDateFormat("yyyyMMdd-HHmm", Locale.getDefault()).parse(JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "")?.getString("buildtime") ?: "Unknown") ?: "") ?: "Unknown"
 
         updCheckDate.text = sharedPreferences?.getString("lastCheck", "Never")
-        updChannel.text = sharedPreferences?.getString("channel", "Stable")
+        updChannel.text = sharedPreferences?.getString("channel", "stable")
         val latestVersion = context?.getSharedPreferences("latest", Context.MODE_PRIVATE)?.getFloat("version", -1f) ?: -1f
         updLatestVersion.text =  latestVersion.toString()
 
@@ -128,7 +128,7 @@ class IntroFragment : Fragment() {
     private fun startDownload() {
         val obj = JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "{}")
         val device = obj?.getString("kernel-name") ?: "Generic"
-        val channel = context?.getSharedPreferences("update", Context.MODE_PRIVATE)?.getString("channel", "Stable") ?: "Generic"
+        val channel = context?.getSharedPreferences("update", Context.MODE_PRIVATE)?.getString("channel", "stable") ?: "generic"
         val direc = File(context!!.getExternalFilesDir(null)!!.absolutePath, "Updates")
         direc.mkdir()
         val file = File(direc, "chidoriKernel-$device-$channel-${context?.getSharedPreferences("latest", Context.MODE_PRIVATE)?.getFloat("version", -1f).toString()}.zip")
@@ -151,7 +151,7 @@ class IntroFragment : Fragment() {
         Thread(Runnable {
             UpdateUtils.checkUpd(context!!)
             (activity as MainActivity).runOnUiThread {
-                val temp = SimpleDateFormat("EEE, dd MMM yyyy hh:mm aa", Locale.getDefault()).format(Date())
+                val temp = SimpleDateFormat("dd MMM yyyy hh:mm", Locale.getDefault()).format(Date())
                 sharedPreferences?.edit()?.putString("lastCheck", temp)?.apply()
                 updCheckDate.text = temp
                 updStatus.text = sharedPreferences?.getString("updateStatus", "Updated")

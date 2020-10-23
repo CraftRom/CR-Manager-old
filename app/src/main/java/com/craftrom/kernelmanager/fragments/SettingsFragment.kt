@@ -41,7 +41,7 @@ class SettingsFragment : Fragment() {
 
             updChannel.setOnClickListener {
                 Choice.isMainRedrawn = 1
-                if(!(sharedPreferences.edit().putString("channel", if (sharedPreferences.getString("channel", "Stable").equals("Beta")) "Stable" else "Beta").commit()))
+                if(!(sharedPreferences.edit().putString("channel", if (sharedPreferences.getString("channel", "stable").equals("beta")) "stable" else "beta").commit()))
                     updChannel.toggle()
             }
 

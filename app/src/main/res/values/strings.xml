@@ -56,4 +56,7 @@
 
     <string name="opn_src_txt">Open source licenses</string>
     <string name="opn_src_desc">Open source libraries and their license</string>
+
+    <string name="need_storage_permission">Please grant storage permission.</string>
+    <string name="need_root_permission">Psycho-Kernel Manager needs root permission!</string>
 </resources>
