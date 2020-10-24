@@ -27,12 +27,12 @@
         android:indeterminateTintMode="src_atop" />
 
     <TextView
+        android:id="@+id/progressBarText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="Getting Kernel State"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="@color/colorHead"
         android:textSize="18sp" />
