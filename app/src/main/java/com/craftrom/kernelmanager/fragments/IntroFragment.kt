@@ -17,10 +17,7 @@ import com.google.android.material.card.MaterialCardView
 import com.craftrom.kernelmanager.R
 import com.craftrom.kernelmanager.activities.Choice
 import com.craftrom.kernelmanager.activities.MainActivity
-import com.craftrom.kernelmanager.utils.FileUtils
-import com.craftrom.kernelmanager.utils.JsonUtils
-import com.craftrom.kernelmanager.utils.PropUtils
-import com.craftrom.kernelmanager.utils.UpdateUtils
+import com.craftrom.kernelmanager.utils.*
 import java.io.File
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
@@ -61,7 +58,7 @@ class IntroFragment : Fragment() {
 
         context!!.registerReceiver(onDownloadComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
 
-        device.text = PropUtils.readProp("ro.product.device")
+        device.text = Device.deviceName
         chidoriVersion.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "{}")?.getString("version") ?: "unknown"
         buildType.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/cidori_kernel") ?: "{}")?.getString("type") ?: "unknown"
         kernVer.text = PropUtils.kernelVersion()

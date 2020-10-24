@@ -30,11 +30,11 @@ class SplashActivity : AppCompatActivity() {
         myHandler.postDelayed({
 
             FileUtils.setFilePermissions().submit {
-                if (CheckRoot.isDeviceRooted() && FileUtils.existFile("/proc/chidori_kernel",true) && dName == "onclite" || dName == "onc") {
+                if (CheckRoot.isDeviceRooted && FileUtils.existFile("/proc/chidori_kernel",true) && dName == "onclite" || dName == "onc") {
                     //Apply profile on start
                     ProfileUtils.applyProfile(this)
                     gotoMainActivity()
-                } else if (CheckRoot.isDeviceRooted() && FileUtils.existFile("/proc/chidori_kernel",true)) {
+                } else if (CheckRoot.isDeviceRooted && FileUtils.existFile("/proc/chidori_kernel",true)) {
                     gotoNoDeviceActivity()
                 } else if (dName == "onclite" || dName == "onc" && FileUtils.existFile("/proc/chidori_kernel",true)){
                     gotoNoRootActivity()
@@ -45,21 +45,6 @@ class SplashActivity : AppCompatActivity() {
             }
         },splashTime)
 
-    }
-
-
-    fun presentActivity(view: View) {
-        val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-            this@SplashActivity,
-            view,
-            "transition"
-        )
-        val revealX = (view.x + view.width / 2).toInt()
-        val revealY = (view.y + view.height / 2).toInt()
-        val intent = Intent(this@SplashActivity, MainActivity::class.java)
-        intent.putExtra(MainActivity.EXTRA_CIRCULAR_REVEAL_X, revealX)
-        intent.putExtra(MainActivity.EXTRA_CIRCULAR_REVEAL_Y, revealY)
-        ActivityCompat.startActivity(this@SplashActivity, intent, options.toBundle())
     }
 
     private fun gotoMainActivity() {
