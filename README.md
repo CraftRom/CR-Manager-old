@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/CraftRom--Kernel%20Manager-vR.1.2.20201023-blue)](https://github.com/CraftRom/CraftRom-Kernel-Manager/releases)
+[![](https://img.shields.io/badge/CraftRom--Kernel%20Manager-vR.1.4.20201023-blue)](https://github.com/CraftRom/CraftRom-Kernel-Manager/releases)
 ![](https://img.shields.io/github/contributors/craftrom/CraftRom-Kernel-Manager)
 [![Crowdin](https://badges.crowdin.net/craft-rom-km/localized.svg)](https://crowdin.com/project/craft-rom-km)
 ![](https://img.shields.io/github/license/craftrom/CraftRom-Kernel-Manager)
