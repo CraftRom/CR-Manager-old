@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.craftrom.kernelmanager.R
 
 
-class NoDeviceActivity : AppCompatActivity() {
+class NoRootActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_no_device)
+        setContentView(R.layout.activity_no_root)
     }
 }
