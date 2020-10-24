@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Craft Rom</string>
     <string name="home">Главная</string>
     <string name="settings">Настройки</string>
@@ -17,14 +17,14 @@
     <string name="channel_head">"Канал обновлений: "</string>
     <string name="check_upd_start">Проверять обновления при старте приложения</string>
     <string name="beta_sign">Проверять наличие бета-релизов</string>
-    <string name="upd_checking">Checking for updates…</string>
+    <string name="upd_checking">Проверка обновлений…</string>
     <string name="profile">Профили</string>
     <string name="chidori_profile">Chidori</string>
     <string name="chidori_prof_desc">Стандартный профиль ядра Chidori настроен на обеспечение хорошей экономии батареи без заметного влияния на производительность устройства.</string>
     <string name="profile_battery">Battery</string>
     <string name="battery_prof_desc">На*** производительность, просто дайте мне полную экономию батареи.</string>
     <string name="profile_performance">Performance</string>
-    <string name="performance_prof_desc">Profile tuned to push your device performance a notch while still trying to save some juice.</string>
+    <string name="performance_prof_desc">Профиль на производительность вашего устройства с попытками сохранить все соки.</string>
     <string name="profile_gaming">Gaming</string>
     <string name="game_prof_desc">Выпустите зверя, убивайте плохих парней или станьте MVP, все легко.</string>
     <string name="custom_warn_head">Пользовательские Настройки</string>
@@ -41,7 +41,7 @@
     <string name="cancel_button">Не сейчас</string>
     <string name="txt_km">Kernel Manager</string>
     <string name="love"><![CDATA[</> с ❤️ от melles1991]]></string>
-    <string name="txt_faqs">FAQs</string>
+    <string name="txt_faqs">Часто задаваемые вопросы</string>
     <string name="faqs_desc">Всё о приложении и связанных с ним вопросах</string>
     <string name="faq_q1">В. Что такое CraftRomKM?</string>
     <string name="faq_a1">О. CraftRomKM — это приложение для управления ядром для устройств AndroidTM, работающих на ядре Chidori.</string>
@@ -50,9 +50,12 @@
     <string name="faq_q3">Q. Where we can find sources of CraftRomKM?</string>
     <string name="faq_a3">A. Sources can be found on GitHub</string>
     <string name="faq_q5">В. Как помочь с переводом?</string>
-    <string name="faq_a5">О. Строки проекта можно найти в Crowdin - на следующей неделе</string>
+    <string name="faq_a5">О. Строки проекта можно найти в Crowdin - https://crowdin.com/project/craft-rom-km</string>
     <string name="faq_q6">В. Некоторые вещи отсутствуют в приложении!</string>
     <string name="faq_a6">О. В настоящее время мы находимся на альфа-этапе разработки.</string>
     <string name="opn_src_txt">Лицензии открытого ПО</string>
     <string name="opn_src_desc">Библиотеки с открытым исходным кодом и их лицензия</string>
+    <string name="no_root_permission">Для Craft Rom Kernel Manager необходимы права суперпользователя!</string>
+    <string name="no_device_permission">Craft Rom Kernel Manager не поддерживает это устройство!</string>
+    <string name="no_kernel_permission">Craft Rom Kernel Manager не поддерживает это ядро!</string>
 </resources>

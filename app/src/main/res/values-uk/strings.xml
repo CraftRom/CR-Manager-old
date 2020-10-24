@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Craft Rom</string>
     <string name="home">Головна</string>
     <string name="settings">Параметри</string>
@@ -20,13 +20,13 @@
     <string name="upd_checking">Пошук оновлення…</string>
     <string name="profile">Профілі</string>
     <string name="chidori_profile">Chidori</string>
-    <string name="chidori_prof_desc">The default Chidori Kernel profile tuned for providing a good battery backup with no noticeable effect on device\'s performance.</string>
+    <string name="chidori_prof_desc">Профіль ядра за замовчуванням налаштований на хорошу економію батареї, не маючи помітного ефекту на продуктивності пристрою.</string>
     <string name="profile_battery">Battery</string>
     <string name="battery_prof_desc">На*** продуктивність, просто максимальне збереження батареї.</string>
     <string name="profile_performance">Performance</string>
     <string name="performance_prof_desc">Profile tuned to push your device performance a notch while still trying to save some juice.</string>
     <string name="profile_gaming">Gaming</string>
-    <string name="game_prof_desc">Unleash the beast, kill some bad guys or be the MVP, all with ease.</string>
+    <string name="game_prof_desc">Звільни звіра, вбийте поганих людей або будьте найшвидше з MVP.</string>
     <string name="custom_warn_head">Власні параметри</string>
     <string name="custom_warn_desc">У вас є зміни в налаштуваннях ядра які будуть перевизначені, якщо ви зміните профіль.</string>
     <string name="applying_values_on_boot">Застосування налаштувань через %d секунд</string>
@@ -43,16 +43,19 @@
     <string name="love"><![CDATA[</> з ❤️ вiд melles1991]]></string>
     <string name="txt_faqs">Запитання й відповіді</string>
     <string name="faqs_desc">Все про додатки та відповідні запитання</string>
-    <string name="faq_q1">Вас. Що таке CraftRomKM?</string>
+    <string name="faq_q1">П. Що таке CraftRomKM?</string>
     <string name="faq_a1">В. CraftRomKM - це менеджер ядра для пристроїв з Android™ які працюють на Cidori Kernel.</string>
     <string name="faq_q2">П. Що таке Ядро?</string>
-    <string name="faq_a2">A. The kernel is a computer program at the core of a computer\'s operating system with complete control over everything in the system. It is an integral part of any operating system. It is the portion of the operating system code that is always resident in memory.</string>
+    <string name="faq_a2">В. Ядро - серце операційної системи комп\'ютера з повним контролем над всім в системі. Це невід\'ємна частина будь-якої операційної системи, та частина коду операційної системи, яка завжди проживає в пам\'яті.</string>
     <string name="faq_q3">Q. Where we can find sources of CraftRomKM?</string>
     <string name="faq_a3">A. Sources can be found on GitHub</string>
     <string name="faq_q5">П. Як допомогти з перекладом?</string>
-    <string name="faq_a5">В. Рядки проекту можна знайти в Crowdin - наступного тижня</string>
+    <string name="faq_a5">В. Рядки проекту можна знайти в Crowdin - https://crowdin.com/project/craft-rom-km</string>
     <string name="faq_q6">П. Деякі матеріали та речі відсутні в додатку!</string>
     <string name="faq_a6">В. Ми знаходимось на альфа-стадii розробки.</string>
     <string name="opn_src_txt">Ліцензії Open Source</string>
     <string name="opn_src_desc">Бібліотеки з відкритим кодом та їх ліцензія</string>
+    <string name="no_root_permission">Craft Rom Kernel Manager потребує права root!</string>
+    <string name="no_device_permission">Craft Rom Kernel Manager не підтримує даний пристрій!</string>
+    <string name="no_kernel_permission">Craft Rom Kernel Manager не підтримує це ядро!</string>
 </resources>
