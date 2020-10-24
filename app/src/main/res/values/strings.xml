@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Craft Rom</string>
     <string name="home">Home</string>
     <string name="settings">Settings</string>
@@ -38,7 +38,6 @@
     <string name="size_value">%1$s MB</string>
     <string name="download_button">Download</string>
     <string name="cancel_button">Later</string>
-
     <string name="txt_km">Kernel Manager</string>
     <string name="love"><![CDATA[</> with ❤️ by melles1991]]></string>
     <string name="txt_faqs">FAQs</string>
@@ -53,10 +52,9 @@
     <string name="faq_a5">A. Project strings can be found on Crowdin - next week</string>
     <string name="faq_q6">Q. Some stuffs and things are missing in app!</string>
     <string name="faq_a6">A. We are currently in alpha stage.</string>
-
     <string name="opn_src_txt">Open source licenses</string>
     <string name="opn_src_desc">Open source libraries and their license</string>
-
-    <string name="need_storage_permission">Please grant storage permission.</string>
-    <string name="need_root_permission">Psycho-Kernel Manager needs root permission!</string>
+    <string name="no_root_permission">Craft Rom Kernel Manager needs root permission!</string>
+    <string name="no_device_permission">Craft Rom Kernel Manager no support this device!</string>
+    <string name="no_kernel_permission">Craft Rom Kernel Manager no support this kernel!</string>
 </resources>

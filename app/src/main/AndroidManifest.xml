@@ -36,6 +36,18 @@
         </activity>
 
         <activity android:name=".activities.MainActivity"/>
+        <activity
+            android:name=".activities.NoRootActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activities.NoDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activities.NoKernelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".activities.FAQsActivity"/>
         <activity android:name=".activities.OSLActivity"/>
         <receiver
