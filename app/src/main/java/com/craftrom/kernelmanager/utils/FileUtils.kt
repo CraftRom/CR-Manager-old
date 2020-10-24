@@ -6,11 +6,82 @@ import com.craftrom.kernelmanager.utils.root.RootFile
 import com.craftrom.kernelmanager.utils.root.RootUtils
 import com.topjohnwu.superuser.Shell
 import java.io.*
+import java.nio.ByteBuffer
+import java.nio.channels.ReadableByteChannel
 import java.security.MessageDigest
 
 class FileUtils {
 
     companion object {
+
+        /**
+         * Created by Lineage OS
+         */
+        private const val TAG = "FileUtils"
+        @JvmStatic
+        @JvmOverloads
+        @Throws(IOException::class)
+        fun copyFile(sourceFile: File, destFile: File, progressCallBack: ProgressCallBack? = null) {
+            try {
+                FileInputStream(sourceFile).channel.use { sourceChannel ->
+                    FileOutputStream(destFile).channel.use { destChannel ->
+                        if (progressCallBack != null) {
+                            val readableByteChannel: ReadableByteChannel = CallbackByteChannel(
+                                sourceChannel,
+                                sourceFile.length(), progressCallBack
+                            )
+                            destChannel.transferFrom(readableByteChannel, 0, sourceChannel.size())
+                        } else {
+                            destChannel.transferFrom(sourceChannel, 0, sourceChannel.size())
+                        }
+                    }
+                }
+            } catch (e: IOException) {
+                Log.e(TAG, "Could not copy file", e)
+                if (destFile.exists()) {
+                    destFile.delete()
+                }
+                throw e
+            }
+        }
+
+        interface ProgressCallBack {
+            fun update(progress: Int)
+        }
+
+        private class CallbackByteChannel(
+            private val mReadableByteChannel: ReadableByteChannel, private val mSize: Long,
+            private val mCallback: ProgressCallBack
+        ) : ReadableByteChannel {
+            private var mSizeRead: Long = 0
+            private var mProgress = 0
+            @Throws(IOException::class)
+            override fun close() {
+                mReadableByteChannel.close()
+            }
+
+            override fun isOpen(): Boolean {
+                return mReadableByteChannel.isOpen
+            }
+
+            @Throws(IOException::class)
+            override fun read(bb: ByteBuffer): Int {
+                var read: Int
+                if (mReadableByteChannel.read(bb).also { read = it } > 0) {
+                    mSizeRead += read.toLong()
+                    val progress = if (mSize > 0) Math.round(mSizeRead * 100f / mSize) else -1
+                    if (mProgress != progress) {
+                        mCallback.update(progress)
+                        mProgress = progress
+                    }
+                }
+                return read
+            }
+        }
+
+        /**
+         * END Created by Lineage OS
+         */
 
         fun writeFile(path: String, text: String?, append: Boolean, asRoot: Boolean) {
             if (asRoot) {
