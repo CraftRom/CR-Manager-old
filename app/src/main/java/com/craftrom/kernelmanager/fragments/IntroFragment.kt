@@ -124,11 +124,12 @@ class IntroFragment : Fragment() {
 
     private fun startDownload() {
         val obj = JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "{}")
-        val device = obj?.getString("kernel-name") ?: "Generic"
+        val kernel = obj?.getString("kernel-name") ?: "Generic"
+        val device = Device.deviceName
         val channel = context?.getSharedPreferences("update", Context.MODE_PRIVATE)?.getString("channel", "stable") ?: "generic"
-        val direc = File(context!!.getExternalFilesDir(null)!!.absolutePath, "Updates")
+        val direc = File(context!!.getExternalFilesDir(null)!!, "Updates")
         direc.mkdir()
-        val file = File(direc, "chidoriKernel-$device-$channel-${context?.getSharedPreferences("latest", Context.MODE_PRIVATE)?.getFloat("version", -1f).toString()}.zip")
+        val file = File(direc, "$kernel-$device-$channel-${context?.getSharedPreferences("latest", Context.MODE_PRIVATE)?.getFloat("version", -1f).toString()}.zip")
         val request = DownloadManager.Request(Uri.parse(context!!.getSharedPreferences("latest", Context.MODE_PRIVATE).getString("url", "")))
                 .setTitle("Chidori Kernel")
                 .setDescription("Downloading Update")

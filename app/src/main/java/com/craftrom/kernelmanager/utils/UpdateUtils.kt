@@ -31,7 +31,7 @@ class UpdateUtils {
             channel: String,
             version: String
         ) {
-            val device = PropUtils.readProp("ro.product.device")
+            val device = Device.deviceName
             val updateURL = "https://raw.githubusercontent.com/CraftRom/KernelUpdates/android-10/$device/$channel/update.json"
             val updateObject = JsonUtils.getJsonObject(NetworkUtils.fetchJSON(updateURL))
             if(updateObject?.getString("version")?.toFloat() ?: -1f > version.toFloat()) {
@@ -44,7 +44,7 @@ class UpdateUtils {
             val saveLatest = context.getSharedPreferences("latest", Context.MODE_PRIVATE).edit()
             saveLatest.putFloat("version", updateObject?.getString("version")?.toFloat() ?: -1f)
             saveLatest.putString("url", updateObject?.getString("url"))
-            saveLatest.putInt("size", updateObject?.getInt("size") ?: 0)
+            saveLatest.putInt("size", updateObject?.getInt("size")!!)
             saveLatest.putString("md5", updateObject?.getString("md5"))
             saveLatest.putString("sha256", updateObject?.getString("sha256"))
             saveLatest.putString("changelog", updateObject?.getString("changelog"))

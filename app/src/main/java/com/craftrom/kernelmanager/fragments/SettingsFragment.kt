@@ -31,7 +31,7 @@ class SettingsFragment : Fragment() {
         if(sharedPreferences != null) {
 
             updStartup.isChecked = sharedPreferences.getBoolean("startup", true)
-            updChannel.isChecked = sharedPreferences.getString("channel", "Stable").equals("Beta")
+            updChannel.isChecked = sharedPreferences.getString("channel", "stable").equals("beta")
             startupProfiles.isChecked = sharedPreferences.getBoolean("apply_profile_on_boot", true)
 
             updStartup.setOnClickListener {
