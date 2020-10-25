@@ -17,6 +17,7 @@ class SettingsFragment : Fragment() {
     private lateinit var updStartup: SwitchMaterial
     private lateinit var updChannel: SwitchMaterial
     private lateinit var startupProfiles: SwitchMaterial
+    private lateinit var superBattery: SwitchMaterial
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -27,12 +28,14 @@ class SettingsFragment : Fragment() {
         updStartup = view.findViewById(R.id.upd_start)
         updChannel = view.findViewById(R.id.beta_sign)
         startupProfiles = view.findViewById(R.id.profile_start)
+        superBattery = view.findViewById(R.id.profile_super_battery)
 
         if(sharedPreferences != null) {
 
             updStartup.isChecked = sharedPreferences.getBoolean("startup", true)
             updChannel.isChecked = sharedPreferences.getString("channel", "stable").equals("beta")
             startupProfiles.isChecked = sharedPreferences.getBoolean("apply_profile_on_boot", true)
+            superBattery.isChecked = sharedPreferences.getBoolean("apply_super_battery", false)
 
             updStartup.setOnClickListener {
                 if (!(sharedPreferences.edit().putBoolean("startup", updStartup.isChecked).commit()))
@@ -48,6 +51,11 @@ class SettingsFragment : Fragment() {
             startupProfiles.setOnClickListener {
                 if(!(sharedPreferences.edit().putBoolean("apply_profile_on_boot", startupProfiles.isChecked).commit()))
                     startupProfiles.toggle()
+            }
+
+            superBattery.setOnClickListener {
+                if(!(sharedPreferences.edit().putBoolean("apply_super_battery", superBattery.isChecked).commit()))
+                    superBattery.toggle()
             }
 
             (activity as MainActivity).fab.setOnClickListener {

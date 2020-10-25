@@ -1,5 +1,6 @@
 package com.craftrom.kernelmanager.fragments
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -25,10 +26,12 @@ class ProfilesFragment : Fragment() {
     private lateinit var titlePerformance: TextView
     private lateinit var titleGame: TextView
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         Choice.choice = 1
         val sharedPreferences = context!!.getSharedPreferences("profile", Context.MODE_PRIVATE)
+        val sharedPreferencesBoot = context?.getSharedPreferences("update", Context.MODE_PRIVATE)
         val view = inflater.inflate(R.layout.fragment_profiles, container, false)
 
         profBattery = view.findViewById(R.id.profile_battery)
@@ -40,7 +43,12 @@ class ProfilesFragment : Fragment() {
         titleChidori = view.findViewById(R.id.chidori_head)
         titlePerformance = view.findViewById(R.id.performance_head)
         titleGame = view.findViewById(R.id.game_head)
-
+        if (sharedPreferencesBoot?.getBoolean("apply_super_battery", true) != false){
+            titleBattery.setText(context!!.getText(R.string.profile_super_battery))
+        } else {
+            if (sharedPreferencesBoot?.getBoolean("apply_super_battery", false))
+            titleBattery.setText(context!!.getText(R.string.profile_battery))
+        }
         when(sharedPreferences.getInt("current", 1)) {
             0 -> {
                 //Battery

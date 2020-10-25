@@ -21,6 +21,7 @@
     <string name="chidori_profile" translatable="false">Chidori</string>
     <string name="chidori_prof_desc">The default Chidori Kernel profile tuned for providing a good battery backup with no noticeable effect on device\'s performance.</string>
     <string name="profile_battery">Battery</string>
+    <string name="profile_super_battery">Super Battery</string>
     <string name="battery_prof_desc">F*** the performance, just give me my ultimate battery backup.</string>
     <string name="profile_performance">Performance</string>
     <string name="performance_prof_desc">Profile tuned to push your device performance a notch while still trying to save some juice.</string>
@@ -32,6 +33,7 @@
     <string name="chidori_version">"Chidori Version: "</string>
     <string name="latest_version">"Latest Version: "</string>
     <string name="set_prof_start">Apply profile on Device Boot</string>
+    <string name="set_super_battery">Activate SUPER Save Battery mode</string>
     <string name="new_update">New Update!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Download Size: "</string>

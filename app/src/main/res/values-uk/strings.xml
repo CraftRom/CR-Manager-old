@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Craft Rom</string>
     <string name="home">Головна</string>
     <string name="settings">Параметри</string>
     <string name="title_about">Про додаток</string>
@@ -8,7 +7,6 @@
     <string name="chidori_tag">Go Chidori!</string>
     <string name="logo_desc">Chidori Kernel Logo</string>
     <string name="device_head">"Пристрій: "</string>
-    <string name="unknown">Unknown</string>
     <string name="version_head">"Версія ядра: "</string>
     <string name="type_head">"Тип збірки: "</string>
     <string name="date_head">"Дата збірки: "</string>
@@ -19,9 +17,9 @@
     <string name="beta_sign">Перевірити наявність бета-релізів</string>
     <string name="upd_checking">Пошук оновлення…</string>
     <string name="profile">Профілі</string>
-    <string name="chidori_profile">Chidori</string>
     <string name="chidori_prof_desc">Профіль ядра за замовчуванням налаштований на хорошу економію батареї, не маючи помітного ефекту на продуктивності пристрою.</string>
     <string name="profile_battery">Battery</string>
+    <string name="profile_super_battery">Super Battery</string>
     <string name="battery_prof_desc">На*** продуктивність, просто максимальне збереження батареї.</string>
     <string name="profile_performance">Performance</string>
     <string name="performance_prof_desc">Profile tuned to push your device performance a notch while still trying to save some juice.</string>
@@ -33,13 +31,13 @@
     <string name="chidori_version">"Версія Chidori: "</string>
     <string name="latest_version">"Остання версія: "</string>
     <string name="set_prof_start">Застосувати профіль при завантаженні пристрою</string>
+    <string name="set_super_battery">Активувати режим SUPER  економії заряду акумулятора</string>
     <string name="new_update">Нове оновлення!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Розмір завантаження: "</string>
     <string name="size_value">%1$s MB</string>
     <string name="download_button">Завантажити</string>
     <string name="cancel_button">Пізніше</string>
-    <string name="txt_km">Kernel Manager</string>
     <string name="love"><![CDATA[</> з ❤️ вiд melles1991]]></string>
     <string name="txt_faqs">Запитання й відповіді</string>
     <string name="faqs_desc">Все про додатки та відповідні запитання</string>

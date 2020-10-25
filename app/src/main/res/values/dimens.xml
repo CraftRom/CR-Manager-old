@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_generic">16dp</dimen>
+    <dimen name="no_card_elevation">0dp</dimen>
+    <dimen name="l_125">2dp</dimen>
+    <dimen name="l_25">4dp</dimen>
+    <dimen name="l_50">8dp</dimen>
+    <dimen name="l_75">12dp</dimen>
+    <dimen name="l1">16dp</dimen>
+    <dimen name="l2">32dp</dimen>
+    <dimen name="l3">48dp</dimen>
+
+    <dimen name="r1">8dp</dimen>
+
     <dimen name="cardStrokeWidth">1.5dp</dimen>
     <dimen name="settingSep">52dp</dimen>
 </resources>

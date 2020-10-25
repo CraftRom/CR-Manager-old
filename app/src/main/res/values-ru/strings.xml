@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Craft Rom</string>
     <string name="home">Главная</string>
     <string name="settings">Настройки</string>
     <string name="title_about">О программе</string>
@@ -8,7 +7,6 @@
     <string name="chidori_tag">Go Chidori!</string>
     <string name="logo_desc">Chidori Kernel Logo</string>
     <string name="device_head">"Устройство: "</string>
-    <string name="unknown">Unknown</string>
     <string name="version_head">"Версия ядра: "</string>
     <string name="type_head">"Тип сборки: "</string>
     <string name="date_head">"Дата сборки: "</string>
@@ -19,9 +17,9 @@
     <string name="beta_sign">Проверять наличие бета-релизов</string>
     <string name="upd_checking">Проверка обновлений…</string>
     <string name="profile">Профили</string>
-    <string name="chidori_profile">Chidori</string>
     <string name="chidori_prof_desc">Стандартный профиль ядра Chidori настроен на обеспечение хорошей экономии батареи без заметного влияния на производительность устройства.</string>
     <string name="profile_battery">Battery</string>
+    <string name="profile_super_battery">Super Battery</string>
     <string name="battery_prof_desc">На*** производительность, просто дайте мне полную экономию батареи.</string>
     <string name="profile_performance">Performance</string>
     <string name="performance_prof_desc">Профиль на производительность вашего устройства с попытками сохранить все соки.</string>
@@ -33,13 +31,13 @@
     <string name="chidori_version">"Версия Chidori: "</string>
     <string name="latest_version">"Последняя версия: "</string>
     <string name="set_prof_start">Применить профиль при загрузке устройства</string>
+    <string name="set_super_battery">Включить дополнительную экономию батареи</string>
     <string name="new_update">Обновление!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Размер скачивания: "</string>
     <string name="size_value">%1$s MB</string>
     <string name="download_button">Загрузить</string>
     <string name="cancel_button">Не сейчас</string>
-    <string name="txt_km">Kernel Manager</string>
     <string name="love"><![CDATA[</> с ❤️ от melles1991]]></string>
     <string name="txt_faqs">Часто задаваемые вопросы</string>
     <string name="faqs_desc">Всё о приложении и связанных с ним вопросах</string>

@@ -24,18 +24,13 @@
         android:id="@+id/info_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="?android:attr/colorBackground"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="0dp"
+        style="@style/WidgetFoundation.Card.Elevated"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true"
         app:contentPadding="16dp"
         app:layout_constraintTop_toBottomOf="@id/logo"
-        app:strokeColor="@color/colorStroke"
-        app:strokeWidth="@dimen/cardStrokeWidth">
+        app:strokeWidth="@dimen/cardStrokeWidth"
+        app:cardElevation="@dimen/margin_generic">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -162,21 +157,19 @@
         android:id="@+id/upd_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/margin_generic"
+        android:layout_marginEnd="@dimen/margin_generic"
+        style="@style/WidgetFoundation.Card.Elevated"
         android:clickable="true"
         android:focusable="true"
         app:cardBackgroundColor="?android:attr/colorBackground"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="0dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true"
         app:contentPadding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/info_card"
-        app:strokeColor="@color/colorStroke"
         app:strokeWidth="@dimen/cardStrokeWidth"
-        android:foreground="?android:selectableItemBackground"        >
+        app:cardElevation="@dimen/no_card_elevation"
+        app:layout_constraintTop_toBottomOf="@id/info_card"
+        app:strokeColor="@color/colorStroke">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

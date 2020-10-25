@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Craft Rom</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="home">Página Inicial</string>
     <string name="settings">Configurações</string>
     <string name="title_about">Sobre</string>
     <string name="chidori_kernel">Chidori Kernel</string>
     <string name="chidori_tag">Go Chidori!</string>
-    <string name="logo_desc">Logo do Kernel Chidori</string>
+    <string name="logo_desc">Chidori Kernel Logo</string>
     <string name="device_head">"Dispositivo: "</string>
-    <string name="unknown">Desconhecido</string>
     <string name="version_head">"Versão do kernel: "</string>
     <string name="type_head">"Tipo da Compilação: "</string>
     <string name="date_head">"Data da compilação: "</string>
@@ -19,31 +17,31 @@
     <string name="beta_sign">Procurar por atualizações Beta</string>
     <string name="upd_checking">Verificando por atualizações…</string>
     <string name="profile">Perfís</string>
-    <string name="chidori_profile">Chidori</string>
     <string name="chidori_prof_desc">O perfil do Kernel Chidori foi ajustado para fornecer uma boa duração de bateria sem nenhum efeito perceptível no desempenho do dispositivo.</string>
-    <string name="profile_battery">Bateria</string>
+    <string name="profile_battery">Battery</string>
+    <string name="profile_super_battery">Super Battery</string>
     <string name="battery_prof_desc">Fod*-se o desempenho, apenas me de o máximo de bateria possível.</string>
-    <string name="profile_performance">Desempenho</string>
+    <string name="profile_performance">Performance</string>
     <string name="performance_prof_desc">O perfil foi ajustado para pressionar o desempenho do seu dispositivo a um entalhe enquanto ainda tentava salvar um pouco de suco.</string>
-    <string name="profile_gaming">Jogos</string>
+    <string name="profile_gaming">Gaming</string>
     <string name="game_prof_desc">Libere a fera, mate alguns caras maus ou seja o MVP, tudo com facilidade.</string>
     <string name="custom_warn_head">Configurações Personalizadas</string>
     <string name="custom_warn_desc">Você tem alterações nas configurações do kernel, que serão substituídas se você alterar o perfil.</string>
-    <string name="applying_values_on_boot">Aplicando configurações em %d segundos</string>
+    <string name="applying_values_on_boot">Aplicando as configurações em %d segundos</string>
     <string name="chidori_version">"Versão do Chidori: "</string>
     <string name="latest_version">"Última versão: "</string>
     <string name="set_prof_start">Aplicar perfil na inicialização do dispositivo</string>
+    <string name="set_super_battery">Activate SUPER Save Battery mode</string>
     <string name="new_update">Nova atualização!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Tamanho do Download: "</string>
     <string name="size_value">%1$s MB</string>
     <string name="download_button">Fazer o download</string>
-    <string name="cancel_button">Mais tarde</string>
-    <string name="txt_km">Gerenciador de Kernel</string>
+    <string name="cancel_button">Depois</string>
     <string name="love"><![CDATA[</> com ❤️ por melles1991]]></string>
-    <string name="txt_faqs">FAQs</string>
+    <string name="txt_faqs">Perguntas Frequentes</string>
     <string name="faqs_desc">Tudo sobre o aplicativo e consultas relacionadas</string>
-    <string name="faq_q1">Q. O que é CraftRomKM?</string>
+    <string name="faq_q1">P. O que é CraftRomKM?</string>
     <string name="faq_a1">R. CraftRomKM é um gerenciador de kernel para dispositivos Android™ que estão rodando o Chidori Kernel.</string>
     <string name="faq_q2">P. O que é Kernel?</string>
     <string name="faq_a2">R. O kernel é um programa de computador no núcleo do sistema operacional de um computador, com total controle sobre tudo no sistema. É uma parte integral de qualquer sistema operacional. É a porção do código do sistema operacional que é sempre residente na memória.</string>
@@ -55,4 +53,7 @@
     <string name="faq_a6">R. Estamos actualmente em fase alfa.</string>
     <string name="opn_src_txt">Licenças de código aberto</string>
     <string name="opn_src_desc">Bibliotecas de código aberto e sua licença</string>
+    <string name="no_root_permission">Craft Rom Kernel Manager precisa de permissão root!</string>
+    <string name="no_device_permission">Craft Rom Kernel Manager não suporta esse aparelho!</string>
+    <string name="no_kernel_permission">Craft Rom Kernel Manager não suporta esse kernel!</string>
 </resources>
