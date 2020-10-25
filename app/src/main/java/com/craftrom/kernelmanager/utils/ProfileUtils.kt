@@ -1,6 +1,7 @@
 package com.craftrom.kernelmanager.utils
 
 import android.content.Context
+import com.craftrom.kernelmanager.R
 
 class ProfileUtils {
 
@@ -10,6 +11,7 @@ class ProfileUtils {
         fun applyProfile(context: Context) {
 
             val sharedPreferences = context.getSharedPreferences("profile", Context.MODE_PRIVATE)
+            val sharedPreferencesBoot = context!!.getSharedPreferences("update", Context.MODE_PRIVATE)
             when(sharedPreferences.getInt("current", 1)) {
                 0 -> {
                     //Battery Profile here
@@ -28,6 +30,17 @@ class ProfileUtils {
                     FileUtils.writeFile("/sys/devices/platform/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz", "650",true, true)
                     FileUtils.writeFile("/sys/module/adreno_idler/parameters/adreno_idler_active", "1",true, true)
                     FileUtils.writeFile("/sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost", "0",true, true)
+
+                    // Offline CPU6 and CPU7
+                    if (sharedPreferencesBoot?.getBoolean("apply_super_battery", true) != false) {
+                        FileUtils.writeFile("/sys/devices/system/cpu/cpu6/online", "0", true, true)
+                        FileUtils.writeFile("/sys/devices/system/cpu/cpu7/online", "0", true, true)
+                    } else {
+                        if (sharedPreferencesBoot?.getBoolean("apply_super_battery", false) != true) {
+                            FileUtils.writeFile("/sys/devices/system/cpu/cpu6/online", "1", true, true)
+                            FileUtils.writeFile("/sys/devices/system/cpu/cpu7/online", "1", true, true)
+                        }
+                    }
 
                 }
                 1 -> {
@@ -48,6 +61,9 @@ class ProfileUtils {
                     FileUtils.writeFile("/sys/devices/platform/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz", "725",true, true)
                     FileUtils.writeFile("/sys/module/adreno_idler/parameters/adreno_idler_active", "0",true, true)
                     FileUtils.writeFile("/sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost", "3",true, true)
+
+                    FileUtils.writeFile("/sys/devices/system/cpu/cpu6/online", "1", true, true)
+                    FileUtils.writeFile("/sys/devices/system/cpu/cpu7/online", "1", true, true)
                 }
                 2 -> {
                     //Performance profile here
@@ -66,6 +82,9 @@ class ProfileUtils {
                     FileUtils.writeFile("/sys/devices/platform/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz", "650",true, true)
                     FileUtils.writeFile("/sys/module/adreno_idler/parameters/adreno_idler_active", "0",true, true)
                     FileUtils.writeFile("/sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost", "2",true, true)
+
+                    FileUtils.writeFile("/sys/devices/system/cpu/cpu6/online", "1", true, true)
+                    FileUtils.writeFile("/sys/devices/system/cpu/cpu7/online", "1", true, true)
                 }
                 3 -> {
                     //Gaming profile here
@@ -84,6 +103,9 @@ class ProfileUtils {
                     FileUtils.writeFile("/sys/devices/platform/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz", "650",true, true)
                     FileUtils.writeFile("/sys/module/adreno_idler/parameters/adreno_idler_active", "0",true, true)
                     FileUtils.writeFile("/sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost", "3",true, true)
+
+                    FileUtils.writeFile("/sys/devices/system/cpu/cpu6/online", "1", true, true)
+                    FileUtils.writeFile("/sys/devices/system/cpu/cpu7/online", "1", true, true)
                 }
                 else -> {
                     //Custom, load from file maybe?

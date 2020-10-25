@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name" translatable="false">Craft Rom</string>
     <string name="home">Home</string>
     <string name="settings">Settings</string>
     <string name="title_about">About</string>
@@ -7,7 +7,6 @@
     <string name="chidori_tag">Go Chidori!</string>
     <string name="logo_desc">Chidori Kernel Logo</string>
     <string name="device_head">"Device: "</string>
-    <string name="unknown" translatable="false">Unknown</string>
     <string name="version_head">"Kernel Version: "</string>
     <string name="type_head">"Build Type: "</string>
     <string name="date_head">"Build Date: "</string>
@@ -18,7 +17,6 @@
     <string name="beta_sign">Check for beta releases</string>
     <string name="upd_checking">Checking for updates…</string>
     <string name="profile">Profiles</string>
-    <string name="chidori_profile" translatable="false">Chidori</string>
     <string name="chidori_prof_desc">The default Chidori Kernel profile tuned for providing a good battery backup with no noticeable effect on device\'s performance.</string>
     <string name="profile_battery">Battery</string>
     <string name="profile_super_battery">Super Battery</string>
@@ -40,7 +38,6 @@
     <string name="size_value">%1$s MB</string>
     <string name="download_button">Download</string>
     <string name="cancel_button">Later</string>
-    <string name="txt_km" translatable="false">Kernel Manager</string>
     <string name="love"><![CDATA[</> with ❤️ by melles1991]]></string>
     <string name="txt_faqs">FAQs</string>
     <string name="faqs_desc">All about app and related queries</string>

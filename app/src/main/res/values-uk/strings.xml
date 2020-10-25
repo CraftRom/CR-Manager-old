@@ -48,7 +48,7 @@
     <string name="faq_q3">Q. Where we can find sources of CraftRomKM?</string>
     <string name="faq_a3">A. Sources can be found on GitHub</string>
     <string name="faq_q5">П. Як допомогти з перекладом?</string>
-    <string name="faq_a5">В. Рядки проекту можна знайти в Crowdin - https://crowdin.com/project/craft-rom-km</string>
+    <string name="faq_a5">A. Project strings can be found on Crowdin - https://crowdin.com/project/craft-rom-km</string>
     <string name="faq_q6">П. Деякі матеріали та речі відсутні в додатку!</string>
     <string name="faq_a6">В. Ми знаходимось на альфа-стадii розробки.</string>
     <string name="opn_src_txt">Ліцензії Open Source</string>

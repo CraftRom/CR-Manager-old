@@ -31,7 +31,7 @@ class ProfilesFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         Choice.choice = 1
         val sharedPreferences = context!!.getSharedPreferences("profile", Context.MODE_PRIVATE)
-        val sharedPreferencesBoot = context?.getSharedPreferences("update", Context.MODE_PRIVATE)
+        val sharedPreferencesBoot = context!!.getSharedPreferences("update", Context.MODE_PRIVATE)
         val view = inflater.inflate(R.layout.fragment_profiles, container, false)
 
         profBattery = view.findViewById(R.id.profile_battery)
