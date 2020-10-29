@@ -9,6 +9,10 @@ Welcome to the <strong>stable</strong> development channel of CraftRom Kernel Ma
 ## Features
 * Only for Chidori Kernel
 
+## Android Version Support
+
+- Android 10+: only Redmi 7/Y3
+
 ## Credits
 
 #### Willi Ye
