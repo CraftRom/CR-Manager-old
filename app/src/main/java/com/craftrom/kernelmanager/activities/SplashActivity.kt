@@ -69,8 +69,7 @@ class SplashActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
 
-for (int i=0; i < 2; i++){
-				Toast.makeText(this, "Welcome to craft rom", Toast.LENGTH_SHORT).show();
+   for (int i=0; i < 2; i++){
+   Toast.makeText(this, "Welcome to craft rom", Toast.LENGTH_SHORT).show();
 			}
-    }
 }
