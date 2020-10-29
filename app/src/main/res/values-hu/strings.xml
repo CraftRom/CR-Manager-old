@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="home">Főmenü</string>
+    <string name="home">Kezdőlap</string>
     <string name="settings">Beállítások</string>
     <string name="title_about">Névjegy</string>
     <string name="chidori_kernel">Chidori Kernel</string>
@@ -31,7 +31,7 @@
     <string name="chidori_version">"Chidori verzió: "</string>
     <string name="latest_version">"Legújabb verzió: "</string>
     <string name="set_prof_start">Profil alkalmazása az eszköz újraindítása után</string>
-    <string name="set_super_battery">Activate SUPER Save Battery mode</string>
+    <string name="set_super_battery">Aktív Szuper Akkumulátor mód</string>
     <string name="new_update">Frissítés érhető el!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Letöltési méret: "</string>
@@ -48,12 +48,12 @@
     <string name="faq_q3">K. Hol találhatjuk meg a CraftRomKM forráskódját?</string>
     <string name="faq_a3">V. A forráskód a GitHub oldalon található.</string>
     <string name="faq_q5">K. Hogyan segíthetsz a fordításban?</string>
-    <string name="faq_a5">A. Project strings can be found on Crowdin - https://crowdin.com/project/craft-rom-km</string>
+    <string name="faq_a5">A Projekt szálam megtalálhatóak a Crowdinen - https://crowdin.com/project/craft-rom-km</string>
     <string name="faq_q6">K. Néhány dolog hiányzik az alkalmazásból!</string>
     <string name="faq_a6">V. Jelenleg alfa stádiumban vagyunk.</string>
     <string name="opn_src_txt">Nyílt forráskódú licencek</string>
     <string name="opn_src_desc">Nyílt forráskódú könyvtárak és licencük</string>
-    <string name="no_root_permission">Craft Rom Kernel Manager needs root permission!</string>
-    <string name="no_device_permission">Craft Rom Kernel Manager no support this device!</string>
-    <string name="no_kernel_permission">Craft Rom Kernel Manager no support this kernel!</string>
+    <string name="no_root_permission">A Craft Rom Kernel Manegernek szüksége van Root jogokra!</string>
+    <string name="no_device_permission">A Craft Rom Kernel Manager nem támogatja az eszköz!</string>
+    <string name="no_kernel_permission">Craft Rom Kernel Managet nem támogatja ezt a kernelt!</string>
 </resources>

@@ -12,8 +12,8 @@
     <string name="date_head">"Data e ndërtimit: "</string>
     <string name="status_head">"Statusi: "</string>
     <string name="last_head">"Kontrolli i fundit: "</string>
-    <string name="channel_head">"Përditëso kanalin: "</string>
-    <string name="check_upd_start">Kontrolloni për azhurnime në fillimin e aplikacionit</string>
+    <string name="channel_head">"Versioni i Kernelit: "</string>
+    <string name="check_upd_start">Kontrolloni për përditësime kur hapni aplikacionin</string>
     <string name="beta_sign">Kontrolloni për lëshime beta</string>
     <string name="upd_checking">Duke kontrolluar përditësimet…</string>
     <string name="profile">Profilet</string>
@@ -30,9 +30,9 @@
     <string name="applying_values_on_boot">Zbatimi i cilësimeve për %d sekonda</string>
     <string name="chidori_version">"Versioni i Chidori: "</string>
     <string name="latest_version">"Versioni i fundit: "</string>
-    <string name="set_prof_start">Aplikoni profilin në Boot</string>
+    <string name="set_prof_start">Aplikoni profilin gjat ristartimit të paisjes</string>
     <string name="set_super_battery">Aktivizoni mënyrën Ruaj baterinë super</string>
-    <string name="new_update">Përditësime të reja!</string>
+    <string name="new_update">Përditësim i ri!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Madhësia e shkarkimit: "</string>
     <string name="size_value">%1$s MB</string>
@@ -48,7 +48,7 @@
     <string name="faq_q3">Q. Ku mund të gjejmë burime të CraftRomKM?</string>
     <string name="faq_a3">A. Burimet mund të gjenden në GitHub</string>
     <string name="faq_q5">Q. Si të ndihmojmë në Përkthim?</string>
-    <string name="faq_a5">A. Project strings can be found on Crowdin - https://crowdin.com/project/craft-rom-km</string>
+    <string name="faq_a5">A. Vargjet e projektit mund të gjenden në Crowdin - https://crowdin.com/project/craft-rom-km</string>
     <string name="faq_q6">Q. Disa materiale dhe gjëra mungojnë në aplikacion!</string>
     <string name="faq_a6">A. Tani jemi në fazën alfa.</string>
     <string name="opn_src_txt">Licencat me burim të hapur</string>

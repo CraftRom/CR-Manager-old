@@ -31,7 +31,7 @@
     <string name="chidori_version">"Versão do Chidori: "</string>
     <string name="latest_version">"Última versão: "</string>
     <string name="set_prof_start">Aplicar perfil na inicialização do dispositivo</string>
-    <string name="set_super_battery">Activate SUPER Save Battery mode</string>
+    <string name="set_super_battery">Ativar o SUPER modo de economia de bateria</string>
     <string name="new_update">Nova atualização!</string>
     <string name="dialog_version">Chidori Kernel v%1$s</string>
     <string name="download_size">"Tamanho do Download: "</string>
@@ -48,7 +48,7 @@
     <string name="faq_q3">P. Onde podemos encontrar as sources do CraftRomKM?</string>
     <string name="faq_a3">R. As sources podem ser encontradas no GitHub</string>
     <string name="faq_q5">P. Como ajudar na tradução?</string>
-    <string name="faq_a5">A. Project strings can be found on Crowdin - https://crowdin.com/project/craft-rom-km</string>
+    <string name="faq_a5">R. As frases do projeto podem ser encontradas na Crowdin - https://crowdin.com/project/craft-rom-km</string>
     <string name="faq_q6">P. Algumas coisas estão faltando no aplicativo!</string>
     <string name="faq_a6">R. Estamos actualmente em fase alfa.</string>
     <string name="opn_src_txt">Licenças de código aberto</string>
