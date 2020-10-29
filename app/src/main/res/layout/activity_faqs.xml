@@ -21,12 +21,15 @@
 
             <TextView
                 android:textStyle="bold"
+                android:textColor="#ffff0f00"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:text="@string/faq_q1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold|italic"
+                android:textColor="#ff1ed600"
                 android:layout_marginTop="6dp"
                 android:text="@string/faq_a1"
                 android:layout_width="match_parent"
@@ -42,12 +45,15 @@
 
             <TextView
                 android:textStyle="bold"
+                android:textColor="#ffff0f00"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:text="@string/faq_q2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold|italic"
+                android:textColor="#ff1ed600"
                 android:layout_marginTop="6dp"
                 android:text="@string/faq_a2"
                 android:layout_width="match_parent"
@@ -64,11 +70,14 @@
             <TextView
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
+                android:textColor="#ffff0f00"
                 android:text="@string/faq_q5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold|italic"
+                android:textColor="#ff1ed600"
                 android:layout_marginTop="6dp"
                 android:text="@string/faq_a5"
                 android:autoLink="web"
@@ -86,11 +95,14 @@
             <TextView
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
+                textColor="#ffff0f00"
                 android:text="@string/faq_q6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:textStyle="bold|italic"
+                android:textColor="#ff1ed600"
                 android:layout_marginTop="6dp"
                 android:text="@string/faq_a6"
                 android:autoLink="web"
