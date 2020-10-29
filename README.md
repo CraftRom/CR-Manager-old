@@ -20,6 +20,10 @@ Welcome to the <strong>stable</strong> development channel of CraftRom Kernel Ma
 * [libsu](https://github.com/topjohnwu/libsu)
 
 #### Translations
+Default string resources for CraftRom Kernel Manager are located here:
+
+- `app/src/main/res/values/strings.xml`
+
 * [Translate page](https://crowdin.com/project/craft-rom-km)
 
 ## License
