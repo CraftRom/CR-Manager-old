@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccent">#63b4f6</color>
+    <color name="colorPrimary">#5A5A5A</color>
+    <color name="colorPrimaryDark">#1B1B1B</color>
     <color name="colorStroke">#434343</color>
     <color name="colorBattery">#63b4f6</color>
     <color name="colorChidori">#81c784</color>
