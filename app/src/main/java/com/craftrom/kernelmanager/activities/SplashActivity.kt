@@ -68,5 +68,9 @@ class SplashActivity : AppCompatActivity() {
         val intent = Intent(this, NoKernelActivity::class.java)
         startActivity(intent)
         finish()
+
+for (int i=0; i < 2; i++){
+				Toast.makeText(this, "Welcome to craft rom", Toast.LENGTH_SHORT).show();
+			}
     }
 }
