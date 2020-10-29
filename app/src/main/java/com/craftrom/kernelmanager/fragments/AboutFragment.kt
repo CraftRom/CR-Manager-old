@@ -10,7 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.craftrom.kernelmanager.BuildConfig
 import com.craftrom.kernelmanager.R
 import com.craftrom.kernelmanager.activities.Choice
 import com.craftrom.kernelmanager.activities.FAQsActivity
@@ -22,9 +24,13 @@ class AboutFragment : Fragment(), View.OnClickListener {
     private lateinit var osl: LinearLayout
     private lateinit var imageView: ImageView
     private lateinit var ghimg: ImageView
+    lateinit var versionApp: TextView
+
     @SuppressLint("UseRequireInsteadOfGet")
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View?  {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View?  {
 
         Choice.choice = 3
         val sharedPreferences = context!!.getSharedPreferences("update", Context.MODE_PRIVATE)
@@ -38,6 +44,10 @@ class AboutFragment : Fragment(), View.OnClickListener {
         imageView.setOnClickListener(this)
         ghimg = view.findViewById(R.id.gh_link)
         ghimg.setOnClickListener(this)
+
+        versionApp = view.findViewById(R.id.version)
+        val versionName = BuildConfig.VERSION_NAME
+            versionApp.setText("v$versionName")
 
         (activity as MainActivity).fab.setOnClickListener {
             (activity as MainActivity).onBackPressed()
