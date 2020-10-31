@@ -28,6 +28,12 @@
             android:title="@string/title_about"
             app:showAsAction="never"/>
 
+        <item
+            android:icon="@drawable/ic_nav_exit"
+            android:onClick="nav_exit"
+            android:title="@string/Exit"
+            app:showAsAction="never" />
+
     </group>
 
 </menu>
