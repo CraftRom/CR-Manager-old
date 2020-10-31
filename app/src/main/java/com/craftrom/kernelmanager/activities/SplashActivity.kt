@@ -73,3 +73,10 @@ class SplashActivity : AppCompatActivity() {
    Toast.makeText(this, "Welcome to craft rom", Toast.LENGTH_SHORT).show();
 			}
 }
+
+** Called when the new exit button is clicked. */
+   public void nav_exit(View view)
+		{
+			
+        finish();
+	}
