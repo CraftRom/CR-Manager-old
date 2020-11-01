@@ -62,7 +62,7 @@ class IntroFragment : Fragment() {
         chidoriVersion.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "{}")?.getString("version") ?: "unknown"
         buildType.text = JsonUtils.getJsonObject(FileUtils.readFile("/proc/cidori_kernel") ?: "{}")?.getString("type") ?: "unknown"
         kernVer.text = PropUtils.kernelVersion()
-        buildDate.text = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(SimpleDateFormat("yyyyMMdd-HHmm", Locale.getDefault()).parse(JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "")?.getString("buildtime") ?: "Unknown") ?: "") ?: "Unknown"
+        buildDate.text = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(SimpleDateFormat("yyyyMMdd-HHmm", Locale.getDefault()).parse(JsonUtils.getJsonObject(FileUtils.readFile("/proc/chidori_kernel") ?: "")?.getString("buildtime") ?: "Unknown") ?: "") ?: "Unknown"
 
         updCheckDate.text = sharedPreferences?.getString("lastCheck", "Never")
         updChannel.text = sharedPreferences?.getString("channel", "stable")
@@ -149,7 +149,7 @@ class IntroFragment : Fragment() {
         Thread(Runnable {
             UpdateUtils.checkUpd(context!!)
             (activity as MainActivity).runOnUiThread {
-                val temp = SimpleDateFormat("dd MMM yyyy hh:mm", Locale.getDefault()).format(Date())
+                val temp = SimpleDateFormat("dd MMMM yyyy hh:mm", Locale.getDefault()).format(Date())
                 sharedPreferences?.edit()?.putString("lastCheck", temp)?.apply()
                 updCheckDate.text = temp
                 updStatus.text = sharedPreferences?.getString("updateStatus", "Updated")
